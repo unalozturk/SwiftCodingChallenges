@@ -19,7 +19,12 @@ func challenge1a(string: String) -> Bool {
     return true
 }
 
+func challenge1b(string: String ) -> Bool {
+    return Set(string).count == string.count
+}
+
 var simpleString = "AaS"
 
-print("Is \(simpleString) unique? Answer:\(challenge1a(string: simpleString))")
+print("1.Solution: Is \(simpleString) unique? Answer:\(challenge1a(string: simpleString))")
+print("2.Solution: Is \(simpleString) unique? Answer:\(challenge1b(string: simpleString))")
 
